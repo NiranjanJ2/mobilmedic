@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    background-color: rgb(190, 230, 214);
+}
+row{
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+}
+.pad{
+    margin-top: 3%;
+}
+h1, h2, h3{
+    color: rgb(17, 91, 102);
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+h1{
+    font-size: 350%;
+}
+.container{
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 10px;
+    padding: 2%;
+}
+label{
+    float: left;
+    margin-left: 5%;
+    font-size: 120%;
+    font-family: "Montserrat";
+}
+input, select {
+    max-width: 125%;
+    border: 2px rgb(17, 91, 102);
+}
+button[type="button"]{
+    background-color: rgb(17, 91, 102);
+    color:white;
+}
+
+.hide{
+    z-index: 0;
+    display: none;
+}
+.show{
+    z-index: 1;
+    display: block;
+}
+
