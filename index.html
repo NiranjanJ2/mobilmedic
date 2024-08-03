@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MobilMedic</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <script src="scripts.js"></script>
+    <row>
+        <h1 class="pad">Welcome to MobilMedic!</h1>
+    <row class="pad">
+        <h2>Lets get you started</h2>
+    </row>
+    <row>
+          <div id="1" class="container pad show">
+            <form id="form1">
+              <div class="mb-3">
+                <label for="age" class="form-label">What is the patient's age?</label>
+                <input id="age" type="number" class="form-control"  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="sex" class="form-label">What is the patient's sex?</label>
+                <select id="sex" class="form-select" aria-label="Default select example">
+                  <option selected>Select Sex</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="problem" class="form-label">What is the patient here for?</label>
+                <select id="problem" class="form-select" aria-label="Default select example">
+                  <option selected>Select ailment</option>
+                  <option value="1">Coughing</option>
+                  <option value="2">Shortness of breath</option>
+                  <option value="3">Chest Pain</option>
+                  <option value="4">Bleeding</option>
+                  <option value="5">Abdominal Pain</option>
+                  <option value="6">Head Injury</option>
+                  <option value="7">Dizziness</option>
+                  <option value="8">Other</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functionone()">Next</button>
+            </form>
+          </div>
+
+          <div id="1.1" class="container pad hide">
+            <h2>
+              Get Well Soon!
+            </h2>
+          </div>
+
+
+
+          <div id="2" class="container pad hide">
+            <form id="form2">
+              <div class="mb-3">
+                <label for="start" class="form-label">When did the cough start?</label>
+                <input id="start" type="date" class="form-control"  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="bad" class="form-label">How severe is the cough?</label>
+                <select id="bad" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Light</option>
+                  <option value="2">Medium</option>
+                  <option value="3">Severe</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="flu" class="form-label">Does patient have a runny nose or nasal congestion</label>
+                <select id="flu" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functiontwo()">Next</button>
+            </form>
+          </div>
+
+          <div id="2.1" class="container pad hide">
+            <h2>
+              Patient might have flu, cold, or chronic sinusitis
+            </h2>
+          </div>
+
+
+
+
+          <div id="3" class="container pad hide">
+            <form id="form3">
+
+
+              <div class="mb-3">
+                <label for="heartburn" class="form-label">Does patient have heartburn?</label>
+                <select id="heartburn" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functionthree()">Next</button>
+            </form>
+          </div>
+
+          <div id="3.1" class="container pad hide">
+            <h2>
+              Patient might be showing symptoms of GERD
+            </h2>
+          </div>
+
+
+
+
+
+          <div id="4" class="container pad hide">
+            <form id="form4">
+
+
+              <div class="mb-3">
+                <label for="fever" class="form-label">Does patient have fever, chills, or night sweats?</label>
+                <select id="fever" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functionfour()">Next</button>
+            </form>
+          </div>
+
+          <div id="4.1" class="container pad hide">
+            <h2>
+              Patient might have Bronchitis, pneumonia, tuberculosis, or lung infection
+            </h2>
+          </div>
+
+
+
+
+          <div id="5" class="container pad hide">
+            <form id="form5">
+
+
+              <div class="mb-3">
+                <label for="blood" class="form-label">Is patient coughing up blood?</label>
+                <select id="blood" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functionfive()">Next</button>
+            </form>
+          </div>
+
+          <div id="5.1" class="container pad hide">
+            <h2>
+              Please follow up with a doctor ASAP!
+            </h2>
+          </div>
+
+
+
+          <div id="6" class="container pad hide">
+            <form id="form6">
+
+
+              <div class="mb-3">
+                <label for="chest" class="form-label">Does the patient have chest pain?</label>
+                <select id="chest" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functionsix()">Next</button>
+            </form>
+          </div>
+
+          <div id="6.1" class="container pad hide">
+            <h2>
+              Patient might have fluid retention from heart failure
+            </h2>
+          </div>
+
+
+
+
+
+
+          <div id="7" class="container pad hide">
+            <form id="form7">
+              <div class="mb-3">
+                <label for="mucus" class="form-label">Does the patient have thich mucus, yellow or green?</label>
+                <select id="mucus" class="form-select" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="functionseven()">Next</button>
+            </form>
+          </div>
+
+    </row>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
